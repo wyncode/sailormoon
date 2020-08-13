@@ -14,4 +14,14 @@ router.post('/sailors', async (req, res) => {
   }
 });
 
+router.get('/sailors', async (req, res) => {
+  Sailor.find({})
+    .then((sailors) => {
+      res.send(sailors);
+    })
+    .catch((e) => {
+      res.send(e);
+    });
+});
+
 module.exports = router;

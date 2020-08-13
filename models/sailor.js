@@ -7,6 +7,15 @@ const sailorSchema = new mongoose.Schema({
   },
   japanese: {
     type: String
+  },
+  aliases: {
+    type: Array
+  },
+  occupation: {
+    type: Array
+  },
+  birthday: {
+    type: String
   }
 });
 
