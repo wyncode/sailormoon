@@ -45,6 +45,7 @@ const sailorSchema = new mongoose.Schema({
   dislikes: {
     type: String,
     required: true
+
   }
 });
 

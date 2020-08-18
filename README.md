@@ -15,10 +15,15 @@ Read the instructions thoroughly before starting your project.
 
 ## Welcome to the Sailor Moon Universe
 
-Over the past few days you have learned how to build a full stack application called an exercise tracker.
+Over the past few days you were introduced to the MERN stack -- a stack used to build full-stack applications here at Wyncode.
 
-In your database design homework, we had you design a sailorScoutSchema!
+In your database design homework, we had you design a `sailorScoutSchema`!
 
-Now it's time to put it to good use :D
+Now we are going to put it to good use, build some routes and make some Sailor Scouts :D
 
-We have set up your server.js and some preliminary code to make a sailor model and create a sailor route.
+We have set up your server.js and some preliminary code to make a sailor model and create some sailor routes.
+
+We would like you to create 3 different sailor scouts of your choice with their specific properties found here:
+https://sailormoon.fandom.com/wiki/Category:Characters_(Crystal)
+
+In your `routes/sailors.js` file, create two routes -- one that will make a POST request to your database (add your `MONGODB_URL` to a .env file). Check in Postman to ensure this is working by creating three new sailors -- each should be different. Once you do that, finish setting up the GET route to see all of your sailors!
