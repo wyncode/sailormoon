@@ -3,19 +3,49 @@ const mongoose = require('mongoose');
 const sailorSchema = new mongoose.Schema({
   name: {
     type: String,
+    required: true,
+    trim: true
+  },
+  japanese_name: {
+    type: String,
     required: true
   },
-  japanese: {
+  residency: {
+    type: Array
+  },
+  occupations: {
     type: String
+  },
+  alignment: {
+    type: Array
   },
   aliases: {
-    type: Array
+    type: Array,
+    required: true
   },
-  occupation: {
-    type: Array
+  relationships: {
+    type: Array,
+    required: true
   },
-  birthday: {
-    type: String
+  birthdate: {
+    type: String,
+    required: true
+  },
+  age: {
+    type: Number,
+    required: true
+  },
+  gender: {
+    enum: ['male', 'female', 'non-binary']
+  },
+  likes: {
+    type: String,
+    required: true
+  },
+  dislikes: {
+    type: String,
+    required: true
+
   }
 });
 
