@@ -1,29 +1,31 @@
-# Node / Create-React-App mashup
+## Welcome to the Sailor Universe
 
-Read the instructions thoroughly before starting your project.
+Over the past week, we have been building full-stack applications. In your database design homework, we had you design a `sailorScoutSchema`.
 
-## Setup
+Now we are going to practice using our schemas and build some routes ✨
 
-- `git clone` this repo
-- `cd` into it.
-- `yarn install`
-- `cd client && yarn install`
+## Getting Started
 
-## Available build commands
+✨Clone this repo and cd into it
 
-- `yarn server`: Runs JUST your Express.JS server.
+✨`yarn install && yarn start`
 
-## Welcome to the Sailor Moon Universe
+## Info
 
-Over the past few days you were introduced to the MERN stack -- a stack used to build full-stack applications here at Wyncode.
+✨If you look in your server.js, you will see we have already built out your server.
 
-In your database design homework, we had you design a `sailorScoutSchema`!
+✨If you look in your model folder--you will see we already have provided the model (schema) for our sailor collection.
 
-Now we are going to put it to good use, build some routes and make some Sailor Scouts :D
+✨If you look in your routes folder--you will see we have given you some preliminary code for two routes.
 
-We have set up your server.js and some preliminary code to make a sailor model and create some sailor routes.
+## Objective
 
-We would like you to create 3 different sailor scouts of your choice with their specific properties found here:
-https://sailormoon.fandom.com/wiki/Category:Characters_(Crystal)
+✨Finish coding the `POST` and `GET` routes in your routes folder
 
-In your `routes/sailors.js` file, create two routes -- one that will make a POST request to your database (add your `MONGODB_URL` to a .env file). Check in Postman to ensure this is working by creating three new sailors -- each should be different. Once you do that, finish setting up the GET route to see all of your sailors!
+✨Don't forget to add a `.env` file and add your MONGODB URL so you can have a place to store your data!
+
+✨Using your `POST` route and the `sailorSchema` model as a reference--create three unique `sailor` documents (via Postman). You can find information for the properties for our Sailor Schema here: https://sailormoon.fandom.com/wiki/Category:Characters_(Crystal)
+
+✨Using Postman, make a `GET` request to our `/sailors` endpoint, to ensure you have three sailors in your database
+
+✨Send a screenshot to `#current-web-dev` to show your work

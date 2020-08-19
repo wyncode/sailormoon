@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-
 const sailorSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -9,15 +8,6 @@ const sailorSchema = new mongoose.Schema({
   japanese_name: {
     type: String,
     required: true
-  },
-  residency: {
-    type: Array
-  },
-  occupations: {
-    type: String
-  },
-  alignment: {
-    type: Array
   },
   aliases: {
     type: Array,
@@ -39,15 +29,13 @@ const sailorSchema = new mongoose.Schema({
     enum: ['male', 'female', 'non-binary']
   },
   likes: {
-    type: String,
+    type: Array,
     required: true
   },
   dislikes: {
-    type: String,
+    type: Array,
     required: true
-
   }
 });
-
 const Sailor = mongoose.model('Sailor', sailorSchema);
 module.exports = Sailor;
